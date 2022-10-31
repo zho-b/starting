@@ -2,9 +2,16 @@ p{
   color: orange;
   text-align: center;
 }
+
 a{
   color: green;
-  text-align: center;
+}
+
+img{
+  img-size: 10px;
+  img-aligh:center;
+}
+
 html,body{
   background_color: white;
 }
