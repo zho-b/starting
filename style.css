@@ -5,4 +5,32 @@ html,body{
     width: 100%;
     z-index:9999;
     height: 100%;
-    position: relative;}
+    position: relative;
+}
+canvas {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  touch-action: none;
+  width: 100%;
+}
+#txt{
+    position: absolute;
+    width:65%;
+    height: 5.5%;
+    left: 10%;
+    top:50%;
+    border: 0px;
+    border-radius: 36.5px;
+    color:black;
+    z-index:9993;
+}
+
+.button{
+    position: absolute;
+    width: 12%;
+    height:5.5%;
+    top:50%;
+    left: 78%;
+    border-radius: 
