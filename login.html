@@ -1,17 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  </head>
-  <body>
-    <a href="https://zho-b.github.io/starting/">返回</a>
-    <div class="input">
-      <span>用户名：</span>
-      <input type="text" placeholder="请输入用户名" id="user"/>
-      <span>密 码：</span>
-      <input type="password" placeholder="请输入密码" id="psd"/>
-      <div class="btn">
-        <button id="登录">登录</button>
-        <button id="注册">注册></button>
-        </body>
-      </head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="box">
+		<form autocomplete="off">
+			<h2>登录</h2>
+			<div class="inputBox">
+				<input type="text" required="required">
+				<span>用户名</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input type="password" required="required">
+				<span>密码</span>
+				<i></i>
+			</div>
+			<div class="links">
+				<a href="#">Forgot Password ?</a>
+				<a href="#">Signup</a>
+			</div>
+			<input type="submit" value="Login">
+		</form>
+	</div>
+</body>
+
