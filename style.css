@@ -1,11 +1,18 @@
 p{
   color: blue;
   text-align: center;
+  font-size: 25px
 }
 
 a{
   color: green;
   text-align: center;
+  cursor:pointer;
+}
+a:HOVER{
+  font-size: 25px;
+
+  color: green;
 }
 
 img{
