@@ -9,6 +9,12 @@ a{
   text-align: center;
   cursor:pointer;
 }
+
+.app{
+  height: 100px;
+  text-align: center;
+}
+
 a:HOVER{
   font-size: 25px;
 
