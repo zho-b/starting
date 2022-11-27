@@ -1,7 +1,7 @@
 p{
   color: aquamarine;
   text-align: center;
-  font-size: 25px
+  font-size: 25px;
 }
 
 a{
@@ -27,7 +27,8 @@ img{
 }
 
 html,body{
- /* background_color: blue;*/
+  /* background_color: blue;*/
+  font-family: 楷体;
 }
 
 h3{
