@@ -31,6 +31,10 @@ html,body{
   font-family: 楷体;
 }
 
+h1{
+  color: coral;
+}
+
 h3{
   color:aquamarine;
 }
