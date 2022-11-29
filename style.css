@@ -33,8 +33,10 @@ html,body{
 
 h1{
   color: coral;
+  text-align: center;
 }
 
 h3{
   color:aquamarine;
+  text-align: center;
 }
