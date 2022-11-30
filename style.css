@@ -40,3 +40,10 @@ h3{
   color:aquamarine;
   text-align: center;
 }
+
+.rainbow{
+  background-image: linear-gradient(to tight, red, orange, yellow, green, paleturquoise, blue, purple);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 30px;
+  }
