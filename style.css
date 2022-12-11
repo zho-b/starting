@@ -42,7 +42,7 @@ h3{
 }
 
 .rainbow{
-  background-image: linear-gradient(to tight, red, orange, yellow, green, paleturquoise, blue, purple);
+  background-image: linear-gradient(to right, red, orange, yellow, green, paleturquoise, blue, purple);
   -webkit-background-clip: text;
   color: transparent;
   font-size: 30px;
