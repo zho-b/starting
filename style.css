@@ -1,0 +1,55 @@
+p{
+  color: aquamarine;
+  text-align: center;
+  font-size: 25px;
+}
+
+a{
+  color:skyblue;
+  text-align: center;
+  cursor:pointer;
+}
+
+.app{
+  height: 100px;
+  text-align: center;
+}
+
+a:HOVER{
+  font-size: 25px;
+
+  color:white;
+}
+
+img{
+  img-size: 10px;
+  img-align:center;
+}
+
+html,body{
+  /* background_color: blue;*/
+  font-family: 楷体;
+}
+
+h1{
+  color: coral;
+  text-align: center;
+}
+
+h3{
+  color:aquamarine;
+  text-align: center;
+}
+
+.rainbow{
+  background-image: linear-gradient(to right, red, orange, yellow, green, paleturquoise, blue, purple);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 30px;
+}
+
+div{
+  color: tomato;
+  text-align: center;
+  font-size:20px;
+}
