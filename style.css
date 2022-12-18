@@ -4,6 +4,11 @@ p{
   font-size: 25px;
 }
 
+audio{
+  color: yellow;
+  text-align: center;
+}
+
 a{
   color:skyblue;
   text-align: center;
