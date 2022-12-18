@@ -5,10 +5,26 @@
     <title>音乐</title>
     <link type="text/css" rel="stylesheet" href="style.css"/>
 </head>
-<body>
+<body background="素材/moon.jpeg">
     <h1 style="rainbow">音乐播放</h1>
     <p>grasswalk</p>
     <audio autoplay="autoplay" loop="loop" controls="controls" preload="auto" src="素材/grasswalk.mp3"></audio><br>
-
+    <p>海德薇变奏曲</p>
+    <audio autoplay="autoplay" loop="loop" controls="controls" preload="auto" src="素材/Hedwig Theme.mp3"></audio><br>
+    <p>花之舞</p>
+    <audio autoplay="autoplay" loop="loop" controls="controls" preload="auto" src="素材/flower dance.mp3"></audio><br>
+    <p>冬の花</p>
+    <audio autoplay="autoplay" loop="loop" controls="controls" preload="auto" src="素材/冬の花.mp3"></audio><br>
+    <p>fade</p>
+    <audio autoplay="autoplay" loop="loop" controls="controls" preload="auto" src="素材/Fade.mp3"></audio><br>
+    <!--
+    <p>grasswalk</p>
+    <audio autoplay="autoplay" loop="loop" controls="controls" preload="auto" src="素材/grasswalk.mp3"></audio><br>
+    <p>grasswalk</p>
+    <audio autoplay="autoplay" loop="loop" controls="controls" preload="auto" src="素材/grasswalk.mp3"></audio><br>
+    <p>grasswalk</p>
+    <audio autoplay="autoplay" loop="loop" controls="controls" preload="auto" src="素材/grasswalk.mp3"></audio><br>
+    <p>grasswalk</p>
+    <audio autoplay="autoplay" loop="loop" controls="controls" preload="auto" src="素材/grasswalk.mp3"></audio><br>-->
 </body>
 </html>
