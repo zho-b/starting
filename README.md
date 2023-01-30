@@ -1,2 +1,2 @@
-A shabby and simple website,build with only HTML and CSS.
+A shabby and simple website.
 No technical content.
