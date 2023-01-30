@@ -12,11 +12,21 @@
         <!--导入各种乱七八糟的东西-->
         <meta charset="UTf-8">
         <link href="style.css" rel="stylesheet" type="text/css"/>
-        <!--<script> src="script.js" ></script>-->
+        <script>src="script.js" type="text/javascript"</script>
+        
+        <!--当前时间-->
+        <script>
+        function getD1(){
+            var date=new Date();
+            var d1=date.toLocaleString();
+            document.getElementById("datetime").innerHTML =d1;
+        }
+        setInterval("getD1();",1000);
+        </script>  
     </head>
       
         
-    <body background="素材/图片/moon.jpeg">
+    <body onload=getD1() background="素材/图片/moon.jpeg">
         <div>
             <p class="rainbow">欢迎！</p>
             <p></p>
@@ -24,6 +34,7 @@
                 <div>
                     <p class="rainbow">如果图片加载出来一大片白，多刷新几次网页</p>
                     <div>
+                        <div id="datetime"></div>
                         <button><a href="index.html">刷新</a></button>
                     </div>
                 </div>
