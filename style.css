@@ -85,3 +85,20 @@ button:active {
  box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
  transform: translateY(0em);
 }
+
+textarea{
+  width: 400px;
+  height: 100px;
+  border: 2px green solid;
+}
+
+li{
+  width:300px;
+  padding:5px;
+  background-color:orange;
+  font-size: 15px;
+}
+
+li a{
+  float: right;
+}
