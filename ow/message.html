@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>message</title>
+      <link href="style.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+      <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+  <body>
+    <textarea></textarea>
+      <button>提交</button>
+      <ul></ul>
+    </textarea>
+    <script>
+            var text=document.querySelector("textarea");
+            var but=document.querySelector("button");
+            var ul=document.querySelector("ul");
+            but.onclick = function () {
+                if (text.value=="") {
+                    alert("Type something!")
+                } else {
+                    var li=document.createElement("li");
+                    li.innerHTML=text.value + "<a href='javascript:;'>Delete</a>"
+                    text.value="";
+                    ul.insertBefore(li,ul.children[0]);
+                    var as = document.querySelectorAll("a");
+                    for (var i = 0; i < as.length; i++) {
+                        as[i].onclick = function () {
+                        ul.removeChild(this.parentNode)
+                        }
+                    }
+                }
+            }</script>
+            <p><br/>or<br/><br/></p>
+    <script>alert("Enter the message first if you want to leave a message by Python.Type in 'a' to leave messages")</script>
+    <py-script>
+            import os
+            n=input()
+            if n=="a":
+                try:
+                   import os
+                   try:
+                       with open("a.txt", "r", encoding="utf-8") as file:
+                           re=file.read()
+                   except:
+                       with open("a.txt","w", encoding="utf-8") as file:
+                           file.write("")
+                       with open("a.txt", "r", encoding="utf-8") as file:
+                           re=file.read()
+                   print("messages")
+                   print(re)
+                   a=input("")#留言
+                   b=input("")#名字
+                   if a=="" or b=="":
+                        print("please enter something")
+                   c=a+"---"+b+"\n\n"
+                   with open("a.txt", "a", encoding="utf-8") as file:
+                       file.write(c)
+                   os.system('clear')
+                   print(re+"\n\n"+c)
+                except:
+                   print("Try again")
+            else:
+                print("Exit")
+    </py-script>  
+  </body>
+</html>
