@@ -1,12 +1,16 @@
 <!DOCTYPE html>
   <html lang="en">
+    
+    
   <head>
       <meta charset="UTF-8">
       <title>message</title>
-      <link href="style.css" rel="stylesheet" type="text/css">
+      <link href="style.css" rel="stylesheet" type="text/css">//引入
       <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
       <script defer src="https://pyscript.net/latest/pyscript.js"></script>
   </head>
+    
+    
   <body>
     <textarea></textarea>
       <button>提交</button>
@@ -17,12 +21,12 @@
             var but=document.querySelector("button");
             var ul=document.querySelector("ul");
             but.onclick = function () {
-                if (text.value=="") {
+                if (text.value=="") {//预防空白留言
                     alert("Type something!")
                 } else {
                     var li=document.createElement("li");
-                    li.innerHTML=text.value + "<a href='javascript:;'>Delete</a>"
-                    text.value="";
+                    li.innerHTML=text.value + "<a href='javascript:;'>Delete</a>"//用li显示
+                    text.value="";//清空留言框
                     ul.insertBefore(li,ul.children[0]);
                     var as = document.querySelectorAll("a");
                     for (var i = 0; i < as.length; i++) {
@@ -31,9 +35,12 @@
                         }
                     }
                 }
-            }</script>
+            }
+    alert("Enter the message first if you want to leave a message by Python.Type in 'a' to leave messages")//
+    </script>
+    
             <p><br/>or<br/><br/></p>
-    <script>alert("Enter the message first if you want to leave a message by Python.Type in 'a' to leave messages")</script>
+    
     <py-script>
             import os
             n=input()
