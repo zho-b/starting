@@ -1,1 +1,1 @@
-A shabby and simple website.
+A shabby and simple website
