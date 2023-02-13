@@ -9,6 +9,57 @@ audio{
   text-align: center;
 }
 
+
+
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: black;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  -webkit-filter: drop-shadow(0 0 23px var(--animation-color));
+          filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+
+
+
 .newtons-cradle {
  --uib-size: 50px;
  --uib-speed: 1.2s;
@@ -131,32 +182,6 @@ div{
   font-size:30px;
 }
 
-button {
- font-size: 18px;
- display: inline-block;
- outline: 0;
- border: 0;
- cursor: pointer;
- will-change: box-shadow,transform;
- background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
- box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
- padding: 0 2em;
- border-radius: 0.3em;
- color: #fff;
- height: 2.6em;
- text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
- transition: box-shadow 0.15s ease, transform 0.15s ease;
-}
-
-button:hover {
- box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
- transform: translateY(-0.1em);
-}
-
-button:active {
- box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
- transform: translateY(0em);
-}
 
 textarea{
   width: 400px;
