@@ -4,6 +4,16 @@ p{
   font-size: 25px;
 }
 
+/*背景*/
+.backimg{
+         background-image: url("../素材/图片/cool.png");
+         background-attachment: fixed;
+         background-size: 100%;
+   }
+
+}
+
+
 audio{
   color: yellow;
   text-align: center;
