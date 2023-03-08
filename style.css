@@ -10,7 +10,12 @@ p{
          background-attachment: fixed;
          background-size: 100%;
    }
-
+}
+.backimg2{
+         background-image: url("../素材/图片/cool2.png");
+         background-attachment: fixed;
+         background-size: 100%;
+   }
 }
 
 
